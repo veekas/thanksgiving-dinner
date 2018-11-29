@@ -1,4 +1,6 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+
+import Spinner from './Spinner';
 
 class Delayed extends Component {
   state = {show : false};
@@ -12,7 +14,7 @@ class Delayed extends Component {
   render() {
       return this.state.show
         ? this.props.children
-        : null;
+        : <Spinner />;
   }
 }
 
