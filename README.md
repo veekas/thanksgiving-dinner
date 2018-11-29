@@ -22,7 +22,16 @@ Unfortunately, even though it appears that the components aren't loading until t
 
 ![step 3 chunks](src/assets/chunks-steps1-3.png)
 
+#### 4. implement React Suspense and React.lazy 👏🏾
+
+Now our app is split into multiple smaller chunks based on our desired courses. We don't make the network call for those assets until the user requests it.
+
+![step 4 chunks](src/assets/step4-chunks.png)
+
+Note that this is actually, in many ways, a worse user experience for an app this small. Good thing this is just for practice!
+
 ### Thanks
 
 - [Rhys Lloyd](https://codepen.io/justrhysism/pen/eDJrk) for the background plate
 - photographers for the images (see alt text and source links for details)
+- the React core team and all the people who have created educational tools for us to learn these tools
