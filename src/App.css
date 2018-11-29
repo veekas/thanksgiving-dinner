@@ -1,32 +1,72 @@
 .App {
   text-align: center;
+  background: #754e34;
+  overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  padding: 20px;
   color: white;
+  font-size: 42px;
 }
 
-.App-link {
-  color: #61dafb;
+.food-image {
+  width: 225px;
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+}
+
+button {
+  font-size: 24px;
+  color: #202129;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+}
+
+.plate-contents {
+  z-index: 2;
+  position: absolute;
+  top: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.plate {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: white;
+  z-index: 0;
+  left: -212px;
+}
+
+/* Plate Styling */
+.plate {
+  position: relative;
+  box-sizing: border-box;
+  padding: 33px 53px;
+  border-radius: 50%;
+  box-shadow: inset 0 5px 3px 0 rgba(255, 255, 255, 0.5), inset 0 -5px 3px 0 rgba(0, 0, 0, 0.78), inset 3px 0 2px 0 rgba(0, 0, 0, 0.25), inset -3px 0 2px 0 rgba(0, 0, 0, 0.25), inset 0 5px 46px 0 rgba(0, 0, 0, 0.4), 0 5px 13px 0 rgba(0, 0, 0, 0.75);
+}
+.plate:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  bottom: 33px;
+  left: 33px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 4px 3px white, inset 0 8px 16px 4px rgba(0, 0, 0, 0.25);
 }
