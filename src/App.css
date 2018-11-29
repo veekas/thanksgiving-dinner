@@ -17,6 +17,20 @@
   margin: 15px;
 }
 
+.buttons {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+}
+
+button {
+  font-size: 24px;
+  color: #202129;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+}
+
 .plate-contents {
   z-index: 2;
   position: absolute;
