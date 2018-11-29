@@ -10,6 +10,10 @@ At this stage, we're loading images on the client-side without handling loading 
 
 ![step 1 chunks](/src/assets/step1/chunks.png)
 
+#### 2. add some loading spinners
+
+We haven't done anything to lazyload yet...
+
 ### Thanks
 
 - [Rhys Lloyd](https://codepen.io/justrhysism/pen/eDJrk) for the background plate
